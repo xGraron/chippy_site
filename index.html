@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" href="gambling_favicon.png" type="image/png" />
+<link rel="icon" href="resources/gambling_favicon.png" type="image/png" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chippy - Gambling Bot</title>
   <style>
-    body 
+    body
     {
       margin: 0;
-      background-color: #242424; 
+      background-color: #242424;
       color: #eee;
       font-family: Arial, sans-serif;
     }
-    header 
+    header
     {
-      background: url('gambling_banner.png') no-repeat center center/cover;
+      background: url('resources/gambling_banner.png') no-repeat center center/cover;
       height: 370px;
       min-height: 100;
       height: 30vw;
@@ -26,7 +26,7 @@
       justify-content: center;
       position: relative;
     }
-    header img 
+    header img
     {
       min-width: 110px;
       width: 15vw;
@@ -37,38 +37,38 @@
       position: absolute;
       bottom: -90px;
     }
-    main 
+    main
     {
       max-width: 600px;
       margin: 100px auto 0;
       padding: 0 20px;
       text-align: center;
     }
-    main a 
+    main a
     {
       color: #4ea1d3;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
-    main a:hover 
+    main a:hover
     {
       text-decoration: underline;
       color: #181830;
     }
-    nav 
+    nav
     {
       position: fixed;
       bottom: 20px;
       left: 20px;
       font-weight: bold;
     }
-    nav a 
+    nav a
     {
       color: #4ea1d3;
       text-decoration: none;
     }
-    nav a:hover 
+    nav a:hover
     {
       text-decoration: underline;
       color: #181830;
@@ -91,9 +91,9 @@
       font-weight: bold;
     }
 
-    .popup-overlay  
+    .popup-overlay
     {
-      display: none;                 
+      display: none;
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0,0,0,0.6);
@@ -102,7 +102,7 @@
       align-items: center;
       padding: 1rem;
     }
-    .popup-content 
+    .popup-content
     {
       background: #fff;
       color: #111;
@@ -113,12 +113,12 @@
       position: relative;
       box-shadow: 0 10px 40px rgba(0,0,0,0.5);
     }
-    .popup-content h2 
+    .popup-content h2
     {
       margin-top: 0;
       font-size: 1.2rem;
     }
-    .popup-close 
+    .popup-close
     {
       position: absolute;
       top: 8px;
@@ -129,7 +129,7 @@
       cursor: pointer;
       color: #444;
     }
-    .popup-content iframe 
+    .popup-content iframe
     {
       width: 100%;
       height: 520px;
@@ -143,7 +143,7 @@
       gap: 0.5em;
     }
 
-    iframe 
+    iframe
     {
       width: 100%;
       height: 400px;
@@ -153,16 +153,16 @@
 </head>
 <body>
   <header>
-    <img src="gambling_pfp.png" alt="Chippy Avatar" />
+    <img src="resources/gambling_pfp.png" alt="Chippy Avatar" />
   </header>
   <main>
     <h1>Welcome to Chippy</h1>
     <p>
       Best games, Best community <3
-       
+
       <p class="links">
-        <a href="https://discord.com/oauth2/authorize?client_id=1373621336982949992">Add Chippy</a> 
-        <a href="games.html">Play Games</a> 
+        <a href="https://discord.com/oauth2/authorize?client_id=1373621336982949992">Add Chippy</a>
+        <a href="games.html">Play Games</a>
         <a href="https://github.com/LazyGran/gambling">Github Repository</a>
       </p>
 
@@ -214,12 +214,12 @@
     <br><br><b>Chippy's favorite server:<br>
     <table style="margin: 0 auto">
       <tr>
-        <td>    
-          <iframe 
-            src="https://discord.com/widget?id=868275733850652732&theme=dark" 
-            width="350" height="500" allowtransparency="true" frameborder="0" 
+        <td>
+          <iframe
+            src="https://discord.com/widget?id=868275733850652732&theme=dark"
+            width="350" height="500" allowtransparency="true" frameborder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-          </iframe> 
+          </iframe>
         </td>
       </tr>
   </table>
@@ -294,7 +294,7 @@
 </div>
 
 <script>
-  function openKofiPopup() 
+  function openKofiPopup()
   {
     const width = 600;
     const height = 700;
@@ -309,14 +309,14 @@
     );
   }
 
-  function openPopup() 
+  function openPopup()
   {
     const popup = document.getElementById("feedbackPopup");
     popup.style.display = "flex";
     popup.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden"; 
+    document.body.style.overflow = "hidden";
   }
-  function closePopup() 
+  function closePopup()
   {
     const popup = document.getElementById("feedbackPopup");
     popup.style.display = "none";

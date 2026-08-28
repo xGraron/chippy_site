@@ -92,50 +92,6 @@
       box-sizing: border-box;
       font-weight: bold;
     }
-    .popup-overlay
-    {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.6);
-      z-index: 9999;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-    }
-    .popup-content
-    {
-      background: #fff;
-      color: #111;
-      padding: 1rem;
-      max-width: 800px;
-      width: 100%;
-      border-radius: 10px;
-      position: relative;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    }
-    .popup-content h2
-    {
-      margin-top: 0;
-      font-size: 1.2rem;
-    }
-    .popup-close
-    {
-      position: absolute;
-      top: 8px;
-      right: 12px;
-      font-size: 1.2rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: #444;
-    }
-    .popup-content iframe
-    {
-      width: 100%;
-      height: 520px;
-      border: none;
-    }
     .links
     {
       display: flex;
@@ -151,17 +107,16 @@
   </header>
   <main>
     <h1>Welcome to Chippy</h1>
-    <a href="https://forms.gle/PNerFHLpQb7ha9NE9">SURVEY REGARDING COMEBACK</a>
     <p>
       Best games, Best community <3
 
-      <p>I appreciate everyone who was apart of this incredible journey. <br> From the concept, through the beta, the incredible launch and the eventual EoL <br><br>
+      <p>Chippy is officially being reworked! <br> Please allow me a good portion of time <br> to get the workflow started everything dialed in. <br><br>
+      I appreciate everyone who has been apart of this incredible journey so far! <br>
       Your support means the world to me. <br>
-      While Chippy is no longer being hosted or maintained, <br> you still have the option to <b>host it yourself</b> by cloning the github repo. <br>
-      This will allow you to continue playing your favorite games! </P>
+
 
       <p style="font-size: .67em"><b><i>
-        I am not quite done yet.</b><br>
+        More news soon..</b><br>
         Remember, the house always wins.
       </i></p>
 
@@ -191,29 +146,7 @@
     The House always wins... eventually.
   </div>
 </footer>
-<div class="popup-overlay" id="feedback" aria-hidden="true">
-  <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="title">
-    <button class="popup-close" onclick="p_close()" aria-label="Close feedback form">✖</button>
-    <h2 id="title">Survey regarding possible comeback</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0v6fnWKDXpqu_iOqP0aGeMvHZRe6DWsgYzQVMfkJPfsmTqQ/viewform?embedded=true" width="640" height="1881" frameborder="0" marginheight="0"  marginwidth="0">Loading…</iframe>
-  </div>
-</div>
 <script>
-  function p_open()
-  {
-    const popup = document.getElementById("feedback");
-    popup.style.display = "flex";
-    popup.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  }
-  function p_close()
-  {
-    const popup = document.getElementById("feedback");
-    popup.style.display = "none";
-    popup.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  }
-  window.addEventListener("load", p_open);
 </script>
 </body>
 </html>

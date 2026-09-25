@@ -29,7 +29,6 @@
     }
     main
     {
-      max-width: 600px;
       margin: 100px auto 0;
       padding: 0 20px;
       text-align: center;
@@ -99,6 +98,8 @@
     <img src="resources/chippy_assets/cylinder_spin.webp">
     <img src="resources/chippy_assets/horses.webp"/>
     <img src="resources/chippy_assets/loading.webp"/>
+
+    <div id="slot_assets"></div>
   </main>
 <footer>
   <div style="flex: 1; text-align: left;">
@@ -116,6 +117,13 @@
   </div>
 </footer>
 <script>
+  for(let i = 0; i < 32; i++)
+  {
+    const img = document.createElement("img")
+    img.src   = `resources/chippy_assets/slots/spin_${i}.webp`
+
+    document.getElementById("slot_assets").appendChild(img)
+  }
 </script>
 </body>
 </html>
